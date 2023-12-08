@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script&family=Maven+Pro&family=Montserrat&family=Nova+Square&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Меню и описание */
+.container {
+    background: rgb(0, 244, 138);
+    background: linear-gradient(0deg, rgba(0, 244, 138, 0.5663515406162465) 0%, rgba(0, 0, 0, 1) 100%);
+    width: 100%;
+    height: 600px auto;
+    position: relative;
+}
+
+.menu {
+    background-color: #1c1c1ce0;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+.menu_logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.menu_logo:hover {
+    cursor: pointer;
+}
+
+.menu_items {
+    display: flex;
+}
+
+.menu_items,
+li,
+a {
+    gap: 50px;
+    font-size: 25px;
+    font-family: 'Nova Square', sans-serif;
+    text-decoration: none;
+    color: rgba(20, 197, 94, 0.934);
+    list-style: none;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, rgba(136, 0, 255, 0.721), rgba(44, 44, 44, 0.477));
+    background-repeat: no-repeat;
+    background-size: 0px 2px;
+    background-position: left bottom;
+    padding-bottom: 2px;
+    transition: 0.5s;
+}
+
+.menu_items li a:hover {
+    cursor: pointer;
+    color: rgba(136, 0, 255, 0.721);
+    background-size: 100% 2px;
+}
+
+hr {
+    margin-bottom: 50px;
+    border-radius: 100%;
+    background-color: rgba(20, 197, 94, 0.934);
+}
+
+.main {
+    border-radius: 50px;
+    width: 80%;
+    height: 400px auto;
+    background-color: #393939c1;
+    margin-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.main h1 {
+    text-transform: uppercase;
+    color: rgba(136, 0, 255, 0.721);
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(20, 197, 94, 0.934);
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main p {
+    color: rgba(20, 197, 94, 0.934);
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(136, 0, 255, 0.721);
+    width: 80%;
+    margin: 0 auto;
+    word-spacing: 12px;
+    letter-spacing: 12px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Мои работы */
+.container_works {
+    background: rgb(0, 244, 138);
+    background: linear-gradient(180deg, rgba(0, 244, 138, 0.5663515406162465) 0%, rgba(0, 0, 0, 1) 100%);
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    text-align: center;
+}
+
+.container_works h2 {
+    padding: 100px 0 50px 0;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(44, 44, 44, 0.885);
+    text-shadow: 8px 8px 4px rgba(136, 0, 255, 0.721);
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.works_item {
+    width: 600px;
+    height: 300px auto;
+    border-radius: 20px;
+}
+
+.works_item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px rgba(136, 0, 255, 0.721);
+}
+
+.works_item img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 7px 7px 7px rgba(136, 0, 255, 0.721);
+}
+
+.works_item img:active {
+    box-shadow: 3px 3px 4px rgba(136, 0, 255, 0.721);
+    opacity: 0.5;
+}
+
+/* Футер и контакты */
+.container_contacts {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+
+    background: rgb(136, 0, 255);
+    background: linear-gradient(0deg, rgba(136, 0, 255, 0.70640756302521) 0%, rgba(0, 0, 0, 1) 75%);
+}
+
+.contacts {
+    color: rgba(20, 197, 94, 0.934);
+
+}
+
+.contacts h3 {
+    font-size: 24px;
+    padding: 10px 0;
+    text-shadow: 2px 2px 4px grey;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.contacts p {
+    color: grey;
+    text-shadow: 2px 2px 4px rgba(20, 197, 94, 0.934);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.fa-brands {
+    font-size: 40px;
+    margin: 20px 10px 0 0;
+
+}
+
+.fa-telegram {
+    color: #0088cc;
+}
+
+.fa-instagram {
+    color: #F56040
+}
+
+.footer-logo img {
+    width: 150px;
+    height: 150px;
+}
