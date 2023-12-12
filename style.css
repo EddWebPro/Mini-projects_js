@@ -205,19 +205,8 @@ hr {
     height: 150px;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 768px) {
     /* Меню и описание (Media)*/
-
-    .menu {
-        background-color: #1c1c1ce0;
-        margin: 0 auto;
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: space-around;
-        position: sticky;
-        top: 0;
-    }
 
     .menu_items {
         display: none;
@@ -226,9 +215,60 @@ hr {
     .fa-bars {
         display: block;
         font-size: 40px;
-        margin-top: 15px;
+        padding-top: 15px;
         color: rgba(136, 0, 255, 0.721);
     }
+
+    .fa-bars:hover {
+        cursor: pointer;
+    }
+
+    .popup {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.8996848739495799) 15%, rgba(169, 74, 253, 1) 100%);
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .popup.open {
+        left: 0;
+    }
+
+    .popup .menu_items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+        overflow: auto;
+    }
+
+    .popup .menu_items>li {
+        width: 100%;
+    }
+
+    .popup .menu_items>li>a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(20, 197, 94, 0.934);
+    }
+
+    .popup .menu_items>li>a:hover {
+        background-color: rgba(122, 82, 179, 0.1);
+    }
+
 
     .main h1 {
         text-transform: uppercase;
@@ -338,5 +378,4 @@ hr {
         width: 100px;
         height: 100px;
     }
-
 }
